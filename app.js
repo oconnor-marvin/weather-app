@@ -4,7 +4,7 @@ window.onload = getWeather("London");
 async function getWeather(cityName) {
   try {
     const response = await fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&APPID=9bd366405cb2a087db1cbc2f66c0a8ef`,
+      `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&APPID=9bd366405cb2a087db1cbc2f66c0a8ef`,
       { mode: "cors" }
     );
     const weatherData = await response.json();
