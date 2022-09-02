@@ -9,7 +9,6 @@ async function getWeather(cityName) {
     );
     const weatherData = await response.json();
     const newData = processData(weatherData);
-    console.log(newData);
     displayData(newData);
   } catch (error) {
     console.log("error");
